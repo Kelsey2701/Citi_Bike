@@ -1,0 +1,2450 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0511.1508                               -->
+<workbook original-version='18.1' source-build='2023.1.2 (20231.23.0511.1508)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.Layers.true...Layers />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='combined_data' inline='true' name='federated.04n909l01c75tb10sg19l1v4tmw4' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='combined_data' name='textscan.1u0cumu0iuw4dc1cppurc1e6rxiu'>
+            <connection class='textscan' directory='/Users/kelseysniatynsky/Desktop/tableau/Citi_Bike/csv' filename='combined_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1u0cumu0iuw4dc1cppurc1e6rxiu' name='combined_data.csv' table='[combined_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='ride_id' ordinal='0' />
+            <column datatype='string' name='rideable_type' ordinal='1' />
+            <column datatype='datetime' name='started_at' ordinal='2' />
+            <column datatype='datetime' name='ended_at' ordinal='3' />
+            <column datatype='string' name='start_station_name' ordinal='4' />
+            <column datatype='string' name='start_station_id' ordinal='5' />
+            <column datatype='string' name='end_station_name' ordinal='6' />
+            <column datatype='string' name='end_station_id' ordinal='7' />
+            <column datatype='real' name='start_lat' ordinal='8' />
+            <column datatype='real' name='start_lng' ordinal='9' />
+            <column datatype='real' name='end_lat' ordinal='10' />
+            <column datatype='real' name='end_lng' ordinal='11' />
+            <column datatype='string' name='member_casual' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1u0cumu0iuw4dc1cppurc1e6rxiu' name='combined_data.csv' table='[combined_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='ride_id' ordinal='0' />
+            <column datatype='string' name='rideable_type' ordinal='1' />
+            <column datatype='datetime' name='started_at' ordinal='2' />
+            <column datatype='datetime' name='ended_at' ordinal='3' />
+            <column datatype='string' name='start_station_name' ordinal='4' />
+            <column datatype='string' name='start_station_id' ordinal='5' />
+            <column datatype='string' name='end_station_name' ordinal='6' />
+            <column datatype='string' name='end_station_id' ordinal='7' />
+            <column datatype='real' name='start_lat' ordinal='8' />
+            <column datatype='real' name='start_lng' ordinal='9' />
+            <column datatype='real' name='end_lat' ordinal='10' />
+            <column datatype='real' name='end_lng' ordinal='11' />
+            <column datatype='string' name='member_casual' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[combined_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ride_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ride_id]</local-name>
+            <parent-name>[combined_data.csv]</parent-name>
+            <remote-alias>ride_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_data.csv_8719C9AF6516404C9C3E97E2023DCAF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rideable_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rideable_type]</local-name>
+            <parent-name>[combined_data.csv]</parent-name>
+            <remote-alias>rideable_type</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_data.csv_8719C9AF6516404C9C3E97E2023DCAF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>started_at</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[started_at]</local-name>
+            <parent-name>[combined_data.csv]</parent-name>
+            <remote-alias>started_at</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_data.csv_8719C9AF6516404C9C3E97E2023DCAF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ended_at</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[ended_at]</local-name>
+            <parent-name>[combined_data.csv]</parent-name>
+            <remote-alias>ended_at</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_data.csv_8719C9AF6516404C9C3E97E2023DCAF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_station_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[start_station_name]</local-name>
+            <parent-name>[combined_data.csv]</parent-name>
+            <remote-alias>start_station_name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_data.csv_8719C9AF6516404C9C3E97E2023DCAF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_station_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[start_station_id]</local-name>
+            <parent-name>[combined_data.csv]</parent-name>
+            <remote-alias>start_station_id</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_data.csv_8719C9AF6516404C9C3E97E2023DCAF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_station_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[end_station_name]</local-name>
+            <parent-name>[combined_data.csv]</parent-name>
+            <remote-alias>end_station_name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_data.csv_8719C9AF6516404C9C3E97E2023DCAF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_station_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[end_station_id]</local-name>
+            <parent-name>[combined_data.csv]</parent-name>
+            <remote-alias>end_station_id</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_data.csv_8719C9AF6516404C9C3E97E2023DCAF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_lat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[start_lat]</local-name>
+            <parent-name>[combined_data.csv]</parent-name>
+            <remote-alias>start_lat</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_data.csv_8719C9AF6516404C9C3E97E2023DCAF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_lng</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[start_lng]</local-name>
+            <parent-name>[combined_data.csv]</parent-name>
+            <remote-alias>start_lng</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_data.csv_8719C9AF6516404C9C3E97E2023DCAF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_lat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[end_lat]</local-name>
+            <parent-name>[combined_data.csv]</parent-name>
+            <remote-alias>end_lat</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_data.csv_8719C9AF6516404C9C3E97E2023DCAF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_lng</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[end_lng]</local-name>
+            <parent-name>[combined_data.csv]</parent-name>
+            <remote-alias>end_lng</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_data.csv_8719C9AF6516404C9C3E97E2023DCAF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>member_casual</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[member_casual]</local-name>
+            <parent-name>[combined_data.csv]</parent-name>
+            <remote-alias>member_casual</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_data.csv_8719C9AF6516404C9C3E97E2023DCAF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='combined_data.csv' datatype='table' name='[__tableau_internal_object_id__].[combined_data.csv_8719C9AF6516404C9C3E97E2023DCAF6]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='End Lat' datatype='real' name='[end_lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='End Lng' datatype='real' name='[end_lng]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='End Station Id' datatype='string' name='[end_station_id]' role='dimension' type='nominal' />
+      <column caption='End Station Name' datatype='string' name='[end_station_name]' role='dimension' type='nominal' />
+      <column caption='Ended At' datatype='datetime' name='[ended_at]' role='dimension' type='ordinal' />
+      <column caption='Member Casual' datatype='string' name='[member_casual]' role='dimension' type='nominal' />
+      <column caption='Ride Id' datatype='string' name='[ride_id]' role='dimension' type='nominal' />
+      <column caption='Rideable Type' datatype='string' name='[rideable_type]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Start Lat' datatype='real' name='[start_lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Start Lng' datatype='real' name='[start_lng]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Start Station Id' datatype='string' name='[start_station_id]' role='dimension' type='nominal' />
+      <column caption='Start Station Name' datatype='string' name='[start_station_name]' role='dimension' type='nominal' />
+      <column caption='Started At' datatype='datetime' name='[started_at]' role='dimension' type='ordinal' />
+      <column-instance column='[end_station_name]' derivation='None' name='[none:end_station_name:nk]' pivot='key' type='nominal' />
+      <column-instance column='[member_casual]' derivation='None' name='[none:member_casual:nk]' pivot='key' type='nominal' />
+      <column-instance column='[start_station_name]' derivation='None' name='[none:start_station_name:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:end_station_name:nk]' palette='tableau20_10_0' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;14 St Ferry - 14 St &amp; Shipyard Ln&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;4 St &amp; River St&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Bergen Ave&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Broadway &amp; W 160 St&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Cliff St &amp; Fulton St&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;E 13 St &amp; Ave A&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;E 53 St &amp; Madison Ave&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Grand St &amp; 14 St&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;JC Medical Center&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Maiden Ln &amp; Pearl St&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Pearl St &amp; Hanover Square&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Spruce St &amp; Nassau St&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;W 180 St &amp; Ft Washington Ave&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;W 33 St &amp; 10 Ave&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;York St &amp; Marin Blvd&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;1 Ave &amp; E 68 St&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;8 Ave &amp; W 31 St&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Ave A &amp; E 14 St&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Broadway &amp; W 36 St&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Central Park West &amp; W 68 St&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Dey St&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;E 41 St &amp; Madison Ave (SE corner)&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Fulton Ave &amp; E 168 St&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Heights Elevator&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Lincoln Park&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Murray St &amp; West St&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;River Ter &amp; Warren St&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;W 15 St &amp; 10 Ave&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;W 52 St &amp; 5 Ave&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Water St &amp; Gouverneur Ln&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;10 Ave &amp; W 14 St&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;3 Ave &amp; E 71 St&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Barclay St &amp; Church St&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Broadway &amp; W 51 St&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Church Sq Park - 5 St &amp; Park Ave&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;E 2 St &amp; 2 Ave&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;E 48 St &amp; 5 Ave&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Fulton St &amp; William St&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Hoboken Terminal - River St &amp; Hudson Pl&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Madison Ave &amp; E 26 St&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Newport Pkwy&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;South End Ave &amp; Albany St&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;W 20 St &amp; 10 Ave&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;W 56 St &amp; 8 Ave&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;White St &amp; Johnson Ave&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;46 St &amp; Queens Blvd&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;6 Ave &amp; Broome St&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Beverley Rd &amp; Nostrand Ave&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Buffalo Ave &amp; E New York Ave&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Columbia St &amp; Kane St&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;E 18 St &amp; Church Ave&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;E 81 St &amp; 1 Ave&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Greenwich Ave &amp; Charles St&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Journal Square&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Marshall St &amp; 2 St&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Perry St &amp; Greenwich Ave&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Suffolk St &amp; Stanton St&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;W 40 St &amp; 7 Ave&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Warren St&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;23 St &amp; 31 Ave&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;5 Ave &amp; E 30 St&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Bergen Ave &amp; Sip Ave&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Broadway &amp; W 168 St&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Clinton Ave &amp; Myrtle Ave&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;E 15 St &amp; 3 Ave&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;E 56 St &amp; 3 Ave&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Grant Ave &amp; MLK Dr&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Jefferson Ave &amp; Evergreen Ave&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Mama Johnson Field - 4 St &amp; Jackson St&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Pearl St &amp; York St&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;St Ann&apos;s Ave &amp; Bruckner Blvd&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;W 181 St &amp; Riverside Dr&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;W 34 St &amp; 11 Ave&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;11 St &amp; Washington St&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;4 Ave &amp; 3 St&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Barrow St &amp; Hudson St&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Broadway &amp; W 56 St&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;City Hall&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;E 5 St &amp; Cooper Sq&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;E 50 St &amp; Park Ave&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Glenwood Ave&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Hudson Blvd W &amp; W 36 St&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Madison Ave &amp; E 51 St&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;North Moore St &amp; Greenwich St&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;South Waterfront Walkway - Sinatra Dr &amp; 1 St&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;W 21 St &amp; 6 Ave&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;W 92 St &amp; Broadway&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;William St &amp; Pine St&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;7 St &amp; Monroe St&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Astor Place&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Broadway &amp; Morris St&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Central Park S &amp; 6 Ave&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Crescent St &amp; 35 Ave&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;E 40 St &amp; 5 Ave&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Franklin St &amp; W Broadway&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Hamilton Park&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Liberty Light Rail&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Morris Canal&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Reade St &amp; Broadway&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;W 10 St &amp; Washington St&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;W 50 St &amp; 9 Ave&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Washington St &amp; Laight St&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2 Ave &amp; E 29 St&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;8 Ave &amp; W 38 St&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Baldwin at Montgomery&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Broadway &amp; W 37 St&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Centre St &amp; Chambers St&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Dixon Mills&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;E 43 St &amp; Madison Ave&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Fulton St &amp; Adams St&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Hilltop&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Lispenard St &amp; Broadway&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;N Moore St &amp; Hudson St&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Riverside Dr &amp; W 153 St&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;W 16 St &amp; The High Line&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;W 52 St &amp; 11 Ave&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Watts St &amp; Greenwich St&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;7 Ave &amp; Central Park South&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Allen St &amp; Rivington St&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Broadway &amp; Battery Pl&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Carroll St &amp; Bond St&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Communipaw &amp; Berry Lane&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;E 33 St &amp; 1 Ave&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Exchange Pl&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Greenwich St &amp; W Houston St&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Leonard Gordon Park&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Monmouth and 6th&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Prospect Pl &amp; Nostrand Ave&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Vesey Pl &amp; River Terrace&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;W 45 St &amp; 8 Ave&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Washington St&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;12 Ave &amp; W 40 St&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;4 Ave &amp; E 12 St&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Bayard St &amp; Baxter St&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Broadway &amp; W 58 St&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;City Hall - Washington St &amp; 1 St&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;E 12 St &amp; 3 Ave&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;E 51 St &amp; 2 Ave&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Grand Army Plaza &amp; Plaza St West&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Hudson St &amp; W 13 St&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Madison St &amp; 1 St&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Oakland Ave&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Southwest Park - Jackson St &amp; Observer Hwy&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;W 24 St &amp; 7 Ave&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;W 95 St &amp; Broadway&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Willoughby Ave &amp; Tompkins Ave&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;6 Ave &amp; W 33 St&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Adam Clayton Powell Blvd &amp; W 123 St&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Bleecker St &amp; Crosby St&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Bushwick Ave &amp; Stagg St&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Columbus Ave &amp; W 103 St&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;E 22 St &amp; 2 Ave&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;E 95 St &amp; 3 Ave&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Greenwich St &amp; Hubert St&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Lafayette Park&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;McGinley Square&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Pershing Field&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Union St&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;W 41 St &amp; 8 Ave&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Warren St &amp; W Broadway&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;6 Ave &amp; Walker St&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Adams St &amp; 2 St&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Bloomfield St &amp; 15 St&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Canal St &amp; Rutgers St&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Columbus Drive&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;E 167 St &amp; Bryant Ave&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;E 26 St &amp; 3 Ave&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Greenwich St &amp; Perry St&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Lafayette St &amp; Grand St&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Mercer St &amp; Bleecker St&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Pike St &amp; Monroe St&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;University Pl &amp; E 14 St&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;W 42 St &amp; Dyer Ave&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Washington Pl &amp; 6 Ave&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;7 St &amp; 5 Ave&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Amsterdam Ave &amp; W 73 St&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Broadway &amp; Berry St&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Cathedral Pkwy &amp; Broadway&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Congress St &amp; Hicks St&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;E 39 St &amp; Lexington Ave&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Fairmount Ave&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Grove St PATH&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Lexington Ave &amp; E 120 St&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Montgomery St&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Queens Plaza North &amp; Crescent St&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Vesey St &amp; Church St&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;W 47 St &amp; 10 Ave&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Washington St &amp; Gansevoort St&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;8 Ave &amp; W 16 St&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Ave A &amp; E 11 St&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Broadway &amp; W 25 St&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Central Park W &amp; W 91 St&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Crescent St &amp; Broadway&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;E 40 St &amp; Park Ave&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Freeman St &amp; Southern Blvd&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Harborside&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Liberty St &amp; Broadway&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Mott St &amp; Prince St&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;River St &amp; 1 St&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;W 13 St &amp; 7 Ave&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;W 51 St &amp; 6 Ave&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Water St &amp; Fletcher St&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;31 Ave &amp; Crescent St&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;5 Ave &amp; E 87 St&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Bergen Ave &amp; Stegman St&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Brunswick &amp; 6th&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Clinton St &amp; 7 St&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;E 16 St &amp; Irving Pl&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;E 56 St &amp; Madison Ave&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Great Jones St&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Jersey &amp; 3rd&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Manila &amp; 1st&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Peck Slip &amp; South St&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Stagg St &amp; Morgan Ave&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;W 34 St &amp; Hudson Blvd E&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;W Broadway &amp; Watts St&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;12 St &amp; Sinatra Dr N&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;4 St &amp; Grand St&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Bedford Ave &amp; Montgomery St&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Broadway &amp; W 61 St&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Cleveland Pl &amp; Spring St&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;E 13 St &amp; 2 Ave&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;E 53 St &amp; 3 Ave&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Grand St&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Jackson Square&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Madison St &amp; 10 St&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Paulus Hook&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Spring St &amp; Hudson St&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;W 116 St &amp; Broadway&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;W 30 St &amp; 8 Ave&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Willow Ave &amp; 12 St&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2 St &amp; Park Ave&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;8 St &amp; Washington St&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Bank St &amp; Hudson St&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Broadway &amp; W 38 St&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Christ Hospital&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Duane St &amp; Hudson St&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;E 47 St &amp; 2 Ave&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Fulton St &amp; Broadway&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Hoboken Ave at Monmouth St&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Lorimer St &amp; Broadway&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Newark Ave&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Riverview Park&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;W 18 St &amp; 9 Ave&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;W 54 St &amp; 6 Ave&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;West End Ave &amp; W 60 St&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;6 St &amp; Grand St&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Adams St &amp; 12 St&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Boston Rd &amp; Prospect Ave&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Carmine St &amp; 6 Ave&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Columbus Park - Clinton St &amp; 9 St&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;E 27 St &amp; Park Ave S&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Essex Light Rail&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Greenwich St &amp; Rector St&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Lafayette St &amp; Jersey St&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Mercer St &amp; Spring St&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Prospect Ave &amp; E 167 St&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Van Vorst Park&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;W 44 St &amp; 5 Ave&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Washington Square E&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;39 Dr &amp; 52 St&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;5 Corners Library&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Beverley Rd &amp; E 49 St&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Brunswick St&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Clinton St &amp; Newark St&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;E 17 St &amp; Broadway&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;E 68 St &amp; 3 Ave&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Greenwich Ave &amp; 8 Ave&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Jersey &amp; 6th St&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Marin Light Rail&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Perry St &amp; Bleecker St&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Stevens - River Ter &amp; 6 St&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;W 36 St &amp; 9 Ave&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Walker St &amp; Baxter St&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;3 Ave &amp; Carroll St&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;9 St HBLR - Jackson St &amp; 8 St&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Bank St &amp; Washington St&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Broadway &amp; W 48 St&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Christopher St &amp; Greenwich St&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;E 1 St &amp; Bowery&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;E 47 St &amp; Park Ave&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Fulton St &amp; Irving Pl&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Hoboken Terminal - Hudson St &amp; Hudson Pl&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;MacDougal St &amp; Prince St&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Newport PATH&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Schermerhorn St &amp; Court St&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;W 20 St &amp; 5 Ave&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;W 54 St &amp; 11 Ave&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;West St &amp; Chambers St&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:member_casual:nk]' type='palette'>
+            <map to='#073e92'>
+              <bucket>&quot;casual&quot;</bucket>
+            </map>
+            <map to='#e03426'>
+              <bucket>&quot;member&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:start_station_name:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;5 Ave &amp; E 87 St&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Adams St &amp; 2 St&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Central Park W &amp; W 91 St&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;E 27 St &amp; Park Ave S&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Greenwich St &amp; Hubert St&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Madison St &amp; 10 St&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Prospect Ave &amp; E 167 St&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;W 30 St &amp; 10 Ave&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;14 St Ferry - 14 St &amp; Shipyard Ln&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Bloomfield St &amp; 15 St&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Crescent St &amp; 35 Ave&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Fulton St &amp; Adams St&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Jersey &amp; 6th St&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Newport PATH&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Vesey Pl &amp; River Terrace&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;3 Ave &amp; E 71 St&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;46 St &amp; Queens Blvd&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Broadway &amp; W 56 St&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;E 13 St &amp; 2 Ave&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Grand St &amp; 14 St&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Liberty Light Rail&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Paulus Hook&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;W 20 St &amp; 5 Ave&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;6 St &amp; Grand St&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Astor Place&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;City Hall - Washington St &amp; 1 St&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;E 53 St &amp; Madison Ave&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Heights Elevator&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Marshall St &amp; 2 St&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Riverview Park&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;W 82 St &amp; Central Park West&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;5 Corners Library&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Adams St &amp; 12 St&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Christ Hospital&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;E 33 St &amp; 1 Ave&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Grove St PATH&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Mama Johnson Field - 4 St &amp; Jackson St&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Prospect Pl &amp; Nostrand Ave&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;W 37 St &amp; 5 Ave&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;4 Ave &amp; E 12 St&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;53 St &amp; Roosevelt Ave&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Brunswick &amp; 6th&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;E 15 St &amp; 3 Ave&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Grant Ave &amp; MLK Dr&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Lincoln Park&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Perry St &amp; Bleecker St&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;W 21 St &amp; 6 Ave&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;11 St &amp; Washington St&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Beverley Rd &amp; Nostrand Ave&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Columbus Park - Clinton St &amp; 9 St&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Freeman St &amp; Southern Blvd&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;JC Medical Center&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;New York Ave &amp; St Marks Ave&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Union St&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2 Ave &amp; E 29 St&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;23 St &amp; 31 Ave&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Broadway &amp; Berry St&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Crescent St &amp; Broadway&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Glenwood Ave&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Journal Square&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Newport Pkwy&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Vesey St &amp; Church St&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;9 St HBLR - Jackson St &amp; 8 St&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Bergen Ave &amp; Sip Ave&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Columbus Ave &amp; W 103 St&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Exchange Pl&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Hoboken Terminal - River St &amp; Hudson Pl&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Morris Canal&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Stevens - River Ter &amp; 6 St&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Willow Ave &amp; 12 St&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;4 St &amp; Grand St&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;81 St &amp; 35 Ave&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Brunswick St&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;E 16 St &amp; Irving Pl&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Greene Ave &amp; Nostrand Ave&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Lispenard St &amp; Broadway&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Perry St &amp; Greenwich Ave&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;W 22 St &amp; 10 Ave&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;7 St &amp; 5 Ave&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Ave A &amp; E 11 St&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Clinton Ave &amp; Myrtle Ave&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;E 95 St &amp; 3 Ave&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Hilltop&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;McGinley Square&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;South Waterfront Walkway - Sinatra Dr &amp; 1 St&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Warren St&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;7 St &amp; Monroe St&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Baldwin at Montgomery&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Clinton St &amp; 7 St&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;E 167 St &amp; Bryant Ave&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Hoboken Ave at Monmouth St&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Monmouth and 6th&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Southwest Park - Jackson St &amp; Observer Hwy&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Washington St&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;11 Ave &amp; W 27 St&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Bergen Ave &amp; Stegman St&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Columbus Drive&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Fairmount Ave&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Jackson Square&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Murray St &amp; West St&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Suffolk St &amp; Stanton St&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;York St &amp; Marin Blvd&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;12 St &amp; Sinatra Dr N&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Bleecker St &amp; Crosby St&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Communipaw &amp; Berry Lane&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Fulton Ave &amp; E 168 St&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Jersey &amp; 3rd&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Newark Ave&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Van Vorst Park&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;6 Ave &amp; Broome St&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Amsterdam Ave &amp; W 73 St&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Church Sq Park - 5 St &amp; Park Ave&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;E 40 St &amp; Park Ave&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Hamilton Park&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Manila &amp; 1st&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Reade St &amp; Broadway&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;W 41 St &amp; 8 Ave&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;4 St &amp; River St&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Adam Clayton Powell Blvd &amp; W 123 St&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Buffalo Ave &amp; E New York Ave&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;E 18 St &amp; Church Ave&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Greenwich Ave &amp; Charles St&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Madison St &amp; 1 St&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Pershing Field&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;W 30 St &amp; 8 Ave&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2 St &amp; Park Ave&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;31 Ave &amp; Crescent St&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Broadway &amp; Morris St&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Dey St&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Grand Army Plaza &amp; Plaza St West&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Lafayette Park&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;North Moore St &amp; Greenwich St&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;W 13 St &amp; 5 Ave&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;8 St &amp; Washington St&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Bergen Ave&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Clinton St &amp; Newark St&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Essex Light Rail&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Hoboken Terminal - Hudson St &amp; Hudson Pl&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Montgomery St&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;St Ann&apos;s Ave &amp; Bruckner Blvd&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Washington St &amp; Gansevoort St&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;6 Ave &amp; W 33 St&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Amsterdam Ave &amp; W 82 St&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;City Hall&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;E 41 St &amp; Madison Ave (SE corner)&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Harborside&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Marin Light Rail&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;River St &amp; 1 St&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;W 51 St &amp; 6 Ave&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;3 Ave &amp; Carroll St&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;39 Dr &amp; 52 St&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Broadway &amp; W 36 St&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Dixon Mills&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Grand St&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Leonard Gordon Park&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Oakland Ave&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;W 13 St &amp; 7 Ave&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='combined_data.csv' id='combined_data.csv_8719C9AF6516404C9C3E97E2023DCAF6'>
+            <properties context=''>
+              <relation connection='textscan.1u0cumu0iuw4dc1cppurc1e6rxiu' name='combined_data.csv' table='[combined_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='ride_id' ordinal='0' />
+                  <column datatype='string' name='rideable_type' ordinal='1' />
+                  <column datatype='datetime' name='started_at' ordinal='2' />
+                  <column datatype='datetime' name='ended_at' ordinal='3' />
+                  <column datatype='string' name='start_station_name' ordinal='4' />
+                  <column datatype='string' name='start_station_id' ordinal='5' />
+                  <column datatype='string' name='end_station_name' ordinal='6' />
+                  <column datatype='string' name='end_station_id' ordinal='7' />
+                  <column datatype='real' name='start_lat' ordinal='8' />
+                  <column datatype='real' name='start_lng' ordinal='9' />
+                  <column datatype='real' name='end_lat' ordinal='10' />
+                  <column datatype='real' name='end_lng' ordinal='11' />
+                  <column datatype='string' name='member_casual' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_A5848AD6DE1D4A7B9037CB694AD73BE6]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Subscribers v Short-Term' />
+      <command command='tsc:brush'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Subscribers v Short-Term' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Map'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined_data' name='federated.04n909l01c75tb10sg19l1v4tmw4' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.04n909l01c75tb10sg19l1v4tmw4'>
+            <column-instance column='[start_lat]' derivation='Avg' name='[avg:start_lat:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[start_lng]' derivation='Avg' name='[avg:start_lng:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[end_station_name]' derivation='Count' name='[cnt:end_station_name:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[start_station_name]' derivation='Count' name='[cnt:start_station_name:qk]' pivot='key' type='quantitative' />
+            <column caption='End Station Name' datatype='string' name='[end_station_name]' role='dimension' type='nominal' />
+            <column-instance column='[end_station_name]' derivation='None' name='[none:end_station_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[start_station_name]' derivation='None' name='[none:start_station_name:nk]' pivot='key' type='nominal' />
+            <column aggregation='Avg' caption='Start Lat' datatype='real' name='[start_lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Start Lng' datatype='real' name='[start_lng]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column caption='Start Station Name' datatype='string' name='[start_station_name]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.04n909l01c75tb10sg19l1v4tmw4].[avg:start_lng:qk]' field-type='quantitative' max='-8233774.1273486186' min='-8250127.2996711098' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.04n909l01c75tb10sg19l1v4tmw4].[avg:start_lat:qk]' field-type='quantitative' max='4981801.6036425242' min='4963886.1868837364' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.04n909l01c75tb10sg19l1v4tmw4].[cnt:end_station_name:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.04n909l01c75tb10sg19l1v4tmw4].[cnt:start_station_name:qk]' value='Start Station Name'>
+              <formatted-text>
+                <run>Start Station Name</run>
+              </formatted-text>
+            </format>
+            <format attr='color' field='[federated.04n909l01c75tb10sg19l1v4tmw4].[cnt:end_station_name:qk]' value='End Station Name'>
+              <formatted-text>
+                <run>End Station Name</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes _.fcp.Layers.true...customization-axis='layer'>
+          <_.fcp.Layers.true...pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </_.fcp.Layers.true...pane>
+          <pane _.fcp.Layers.true...generated-title='Start Lat' id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.04n909l01c75tb10sg19l1v4tmw4].[cnt:start_station_name:qk]' />
+              <size column='[federated.04n909l01c75tb10sg19l1v4tmw4].[none:start_station_name:nk]' />
+              <lod column='[federated.04n909l01c75tb10sg19l1v4tmw4].[none:start_station_name:nk]' />
+            </encodings>
+          </pane>
+          <_.fcp.Layers.true...pane generated-title='Start Lat (2)' id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.04n909l01c75tb10sg19l1v4tmw4].[cnt:end_station_name:qk]' />
+              <size column='[federated.04n909l01c75tb10sg19l1v4tmw4].[none:end_station_name:nk]' />
+              <lod column='[federated.04n909l01c75tb10sg19l1v4tmw4].[none:end_station_name:nk]' />
+            </encodings>
+          </_.fcp.Layers.true...pane>
+        </panes>
+        <rows>[federated.04n909l01c75tb10sg19l1v4tmw4].[avg:start_lat:qk]</rows>
+        <cols>[federated.04n909l01c75tb10sg19l1v4tmw4].[avg:start_lng:qk]</cols>
+      </table>
+      <simple-id uuid='{E66EF1EA-DC10-461F-ADAC-0D6F25F51336}' />
+    </worksheet>
+    <worksheet name='Ride Type'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Ride Type by Member</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined_data' name='federated.04n909l01c75tb10sg19l1v4tmw4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04n909l01c75tb10sg19l1v4tmw4'>
+            <column-instance column='[rideable_type]' derivation='Count' name='[cnt:rideable_type:qk]' pivot='key' type='quantitative' />
+            <column caption='Member Casual' datatype='string' name='[member_casual]' role='dimension' type='nominal' />
+            <column-instance column='[member_casual]' derivation='None' name='[none:member_casual:nk]' pivot='key' type='nominal' />
+            <column-instance column='[rideable_type]' derivation='None' name='[none:rideable_type:nk]' pivot='key' type='nominal' />
+            <column caption='Rideable Type' datatype='string' name='[rideable_type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.04n909l01c75tb10sg19l1v4tmw4].[cnt:rideable_type:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.04n909l01c75tb10sg19l1v4tmw4].[none:member_casual:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.04n909l01c75tb10sg19l1v4tmw4].[cnt:rideable_type:qk]</rows>
+        <cols>[federated.04n909l01c75tb10sg19l1v4tmw4].[none:rideable_type:nk]</cols>
+      </table>
+      <simple-id uuid='{CC61878A-E3D2-4E7E-956A-4C2E5F901BC0}' />
+    </worksheet>
+    <worksheet name='Subscribers v Short-Term'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined_data' name='federated.04n909l01c75tb10sg19l1v4tmw4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04n909l01c75tb10sg19l1v4tmw4'>
+            <column caption='Member Casual' datatype='string' name='[member_casual]' role='dimension' type='nominal' />
+            <column-instance column='[member_casual]' derivation='None' name='[none:member_casual:nk]' pivot='key' type='nominal' />
+            <column-instance column='[member_casual]' derivation='Count' name='[pcto:cnt:member_casual:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.04n909l01c75tb10sg19l1v4tmw4].[none:member_casual:nk]' />
+              <size column='[federated.04n909l01c75tb10sg19l1v4tmw4].[pcto:cnt:member_casual:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols total='true' />
+      </table>
+      <simple-id uuid='{5118BDB5-90B5-480D-9474-4A917DA023A1}' />
+    </worksheet>
+    <worksheet name='Top 10 End'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined_data' name='federated.04n909l01c75tb10sg19l1v4tmw4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04n909l01c75tb10sg19l1v4tmw4'>
+            <column-instance column='[end_station_name]' derivation='Count' name='[cnt:end_station_name:qk]' pivot='key' type='quantitative' />
+            <column caption='End Station Name' datatype='string' name='[end_station_name]' role='dimension' type='nominal' />
+            <column-instance column='[end_station_name]' derivation='None' name='[none:end_station_name:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.04n909l01c75tb10sg19l1v4tmw4].[none:end_station_name:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([end_station_name])' function='order' user:ui-marker='order'>
+                <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='level-members' level='[none:end_station_name:nk]' />
+                  <groupfilter function='member' level='[none:end_station_name:nk]' member='%null%' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.04n909l01c75tb10sg19l1v4tmw4].[none:end_station_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.04n909l01c75tb10sg19l1v4tmw4].[cnt:end_station_name:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.04n909l01c75tb10sg19l1v4tmw4].[none:end_station_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.04n909l01c75tb10sg19l1v4tmw4].[cnt:end_station_name:qk]' scope='cols' value='End Station ' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.04n909l01c75tb10sg19l1v4tmw4].[none:end_station_name:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.04n909l01c75tb10sg19l1v4tmw4].[none:end_station_name:nk]</rows>
+        <cols>[federated.04n909l01c75tb10sg19l1v4tmw4].[cnt:end_station_name:qk]</cols>
+      </table>
+      <simple-id uuid='{F5B256AD-BCD6-4748-82A4-F78F3C1D2271}' />
+    </worksheet>
+    <worksheet name='Top 10 Station'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Top 10 Start Stations</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined_data' name='federated.04n909l01c75tb10sg19l1v4tmw4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04n909l01c75tb10sg19l1v4tmw4'>
+            <column-instance column='[start_station_name]' derivation='Count' name='[cnt:start_station_name:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[start_station_name]' derivation='None' name='[none:start_station_name:nk]' pivot='key' type='nominal' />
+            <column caption='Start Station Name' datatype='string' name='[start_station_name]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.04n909l01c75tb10sg19l1v4tmw4].[none:start_station_name:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([start_station_name])' function='order' user:ui-marker='order'>
+                <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='level-members' level='[none:start_station_name:nk]' />
+                  <groupfilter function='member' level='[none:start_station_name:nk]' member='%null%' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.04n909l01c75tb10sg19l1v4tmw4].[none:start_station_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.04n909l01c75tb10sg19l1v4tmw4].[cnt:start_station_name:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.04n909l01c75tb10sg19l1v4tmw4].[none:start_station_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.04n909l01c75tb10sg19l1v4tmw4].[cnt:start_station_name:qk]' scope='cols' value='Starting Station' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.04n909l01c75tb10sg19l1v4tmw4].[none:start_station_name:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.04n909l01c75tb10sg19l1v4tmw4].[none:start_station_name:nk]</rows>
+        <cols>[federated.04n909l01c75tb10sg19l1v4tmw4].[cnt:start_station_name:qk]</cols>
+      </table>
+      <simple-id uuid='{D845E813-2334-431A-BF84-7131A2A08041}' />
+    </worksheet>
+    <worksheet name='Total Rides'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined_data' name='federated.04n909l01c75tb10sg19l1v4tmw4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04n909l01c75tb10sg19l1v4tmw4'>
+            <column-instance column='[ride_id]' derivation='Count' name='[cnt:ride_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Ride Id' datatype='string' name='[ride_id]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.04n909l01c75tb10sg19l1v4tmw4].[cnt:ride_id:qk]' scope='cols' value='Total # of Rides' />
+            <format attr='height' field='[federated.04n909l01c75tb10sg19l1v4tmw4].[cnt:ride_id:qk]' value='54' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.04n909l01c75tb10sg19l1v4tmw4].[cnt:ride_id:qk]</cols>
+      </table>
+      <simple-id uuid='{D9F113F6-1E7D-4FB0-BA5C-132C77BE8F47}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Bike Story' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Citi Bike Story</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='3423' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='4253' />
+            <zone h='84440' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='14730'>
+              <flipboard active-id='3' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Location information' captured-sheet='Location' id='1'>
+                    <capturedDeltas>
+                      <worksheet name='Map'>
+                        <style delta-type='added'>
+                          <style-rule element='axis'>
+                            <encoding attr='space' class='0' field='[federated.04n909l01c75tb10sg19l1v4tmw4].[avg:start_lat:qk]' field-type='quantitative' max='4984261.1814567149' min='4960884.4920053417' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+                            <encoding attr='space' class='0' field='[federated.04n909l01c75tb10sg19l1v4tmw4].[avg:start_lng:qk]' field-type='quantitative' max='-8232148.4419125589' min='-8253486.6578231743' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+                          </style-rule>
+                        </style>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='Membership Type' captured-sheet='Subscribers v Short-Term' id='2' />
+                  <story-point caption='Rider Type ' captured-sheet='Ride Type' id='3' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{FF24AB75-EE02-4A73-867B-92D03E7419E5}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Location'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='21' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='6' type-v2='layout-basic' w='98400' x='800' y='1000'>
+              <zone h='55752' id='11' name='Top 10 End' w='32600' x='66600' y='43248'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='42248' id='13' name='Top 10 Station' w='32600' x='66600' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='90000' id='19' name='Map' show-title='false' w='65800' x='800' y='9000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='4000' id='22' name='Map' pane-specification-id='1' param='[federated.04n909l01c75tb10sg19l1v4tmw4].[cnt:start_station_name:qk]' type-v2='color' w='65800' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='4000' id='25' name='Map' pane-specification-id='3' param='[federated.04n909l01c75tb10sg19l1v4tmw4].[cnt:end_station_name:qk]' type-v2='color' w='65800' x='800' y='5000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1600' minheight='1600' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='32' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='31' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='42248' id='13' is-fixed='true' name='Top 10 Station' w='32600' x='66600' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45687' id='19' is-fixed='true' name='Map' show-title='false' w='65800' x='800' y='9000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4000' id='22' name='Map' pane-specification-id='1' param='[federated.04n909l01c75tb10sg19l1v4tmw4].[cnt:start_station_name:qk]' type-v2='color' w='65800' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4000' id='25' name='Map' pane-specification-id='3' param='[federated.04n909l01c75tb10sg19l1v4tmw4].[cnt:end_station_name:qk]' type-v2='color' w='65800' x='800' y='5000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='55752' id='11' is-fixed='true' name='Top 10 End' w='32600' x='66600' y='43248'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{FA944A3B-0883-426D-97FF-6C8EE363764E}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Riders'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='49000' id='3' name='Ride Type' w='82400' x='800' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='9' name='Subscribers v Short-Term' w='82400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='8250' id='8' name='Ride Type' pane-specification-id='0' param='[federated.04n909l01c75tb10sg19l1v4tmw4].[none:member_casual:nk]' type-v2='color' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='15625' id='11' name='Total Rides' w='16000' x='83200' y='9250'>
+                <layout-cache fixed-size-h='117' minwidth='100' type-h='fixed' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E1B44171-9B50-4CC1-A15E-A044E806BD28}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Total Rides'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D37E4808-C626-45B6-9BB3-65D4E1ED615B}' />
+    </window>
+    <window class='worksheet' name='Subscribers v Short-Term'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04n909l01c75tb10sg19l1v4tmw4].[none:member_casual:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.04n909l01c75tb10sg19l1v4tmw4].[pcto:cnt:member_casual:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{1DB7E87D-486C-42B8-A12F-933D5C883C88}' />
+    </window>
+    <window class='worksheet' name='Top 10 Station'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04n909l01c75tb10sg19l1v4tmw4].[none:start_station_name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A701C245-16D9-4B57-9B52-FD0580C6223A}' />
+    </window>
+    <window class='worksheet' name='Top 10 End'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04n909l01c75tb10sg19l1v4tmw4].[none:end_station_name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BE144127-E42B-411B-BFDD-7A122A61661B}' />
+    </window>
+    <window class='worksheet' name='Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.04n909l01c75tb10sg19l1v4tmw4].[cnt:start_station_name:qk]' type='color' />
+            <card pane-specification-id='1' param='[federated.04n909l01c75tb10sg19l1v4tmw4].[none:start_station_name:nk]' type='size' />
+            <card pane-specification-id='3' param='[federated.04n909l01c75tb10sg19l1v4tmw4].[none:end_station_name:nk]' type='size' />
+            <card pane-specification-id='3' param='[federated.04n909l01c75tb10sg19l1v4tmw4].[cnt:end_station_name:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{A5F97847-C728-4DAE-B1D0-34CAF942CF8E}' />
+    </window>
+    <window class='worksheet' name='Ride Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04n909l01c75tb10sg19l1v4tmw4].[none:member_casual:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{309132D6-6585-4C3E-9E77-4C857EBB7126}' />
+    </window>
+    <window class='dashboard' name='Location'>
+      <viewpoints>
+        <viewpoint name='Map'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+        <viewpoint name='Top 10 End' />
+        <viewpoint name='Top 10 Station' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{A1FF49B2-0910-4D8F-9FED-504CCDABB5AD}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Riders'>
+      <viewpoints>
+        <viewpoint name='Ride Type'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Subscribers v Short-Term'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Rides' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{53533EB2-6F57-49B7-9476-8ACC4964331B}' />
+    </window>
+    <window class='dashboard' name='Bike Story'>
+      <viewpoints />
+      <active id='5' />
+      <simple-id uuid='{9CFEB994-5471-4FCE-ADAE-F168D3E29C10}' />
+    </window>
+  </windows>
+</workbook>
